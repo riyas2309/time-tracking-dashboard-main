@@ -29,10 +29,15 @@ body {
   padding: 1rem;
   color: #fafcffff;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .usercontainer {
   background: var(--Dark-blue);
   display: flex;
-  min-width: 85vw;
+  width: 23rem;
   border-radius: 1.2rem;
   flex-direction: column;
 }
@@ -62,23 +67,38 @@ body {
   font-size: 1.8rem;
   color: #ffff;
 }
+button {
+  border: none;
+  background: none;
+  align-items: center;
+
+  padding: 2rem 2rem;
+  color: #7576baff;
+}
 .buttons {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
 }
-.work-container,
-.container {
-  background: var(--Light-red-work);
-  width: 85vw;
+button:hover {
+  cursor: pointer;
+  color: #fafcffff;
+}
+.containerclass {
+  width: 23rem;
   border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+.inner-container:hover {
+  cursor: pointer;
 }
 .inner-container {
-  width: 100%;
+  margin-top: 10%;
+  width: 23rem;
   background: var(--Dark-blue);
   border-radius: 1.2rem;
   padding: 2rem;
+  position: relative;
 }
 .inner {
   display: flex;
@@ -86,9 +106,51 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  text-wrap: nowrap;
+  justify-content: space-between;
 }
 .inner img {
-  width: 2.6rem;
-  height: 0.65rem;
-  margin-left: 55%;
+  width: 2.6;
+  height: 0.65;
+}
+.inner img:hover {
+  cursor: pointer;
+}
+.current-week {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.last-week {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #fafcffff;
+}
+.words {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: none;
+}
+.logo {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+}
+.work-container {
+  background: var(--Light-red-work);
+}
+.play-container {
+  background: var(--Soft-blue-play);
+}
+.study-container {
+  background: var(--Light-red-study);
+}
+.exer-container {
+  background: var(--Lime-green-exercise);
+}
+.social-container {
+  background: var(--Violet-social);
+}
+.self-container {
+  background: var(--Soft-orange-self-care);
 }
